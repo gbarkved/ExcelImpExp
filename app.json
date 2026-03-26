@@ -1,0 +1,32 @@
+{
+  "id": "16101942-8dd8-4c73-aa8d-0d39032e27fe",
+  "name": "ExcelImpExp",
+  "publisher": "Cepheo Norge AS",
+  "version": "22.0.0.1",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 88600,
+      "to": 88699
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "12.0",
+  "features": ["TranslationFile",
+    "NoImplicitWith"
+  ]
+}

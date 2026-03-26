@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="ExcelImpExp">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 4158535401 - Field 2623664455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Errortext</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Error - Field Errortext - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4158535401 - Field 1165969121 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Linjenr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Error - Field LineNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4158535401 - Field 2832376511 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pakkekode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Error - Field PackedCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4158535401 - Field 956471723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RecID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Error - Field RecId - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4158535401 - Field 3135334477 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TabellID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel Error - Field Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 2940356048 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ExcelBufRow</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field ExcelBufRow - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 956126462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excelmalkode</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field ExcelMalCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 1032501252 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excelmalnavn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field ExcelMalName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 491165568 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Felt ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field FieldIDs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 989751795 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FileName</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field FileName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 1360888697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IB Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field IBDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 3784569992 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IB Line No</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field IBLineNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 3626802534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ImportLogFil</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field ImportLogFil - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 2704330142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Batch Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field Journal Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 3684440170 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Journal Template Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field Journal Template Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 1435595288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KeyValue</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field KeyValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 372841480 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opprett nytt regneark</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field Opprett nytt regneark - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 4104898276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Arknavn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field SheetName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 291409893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tabell ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field TableID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 730832363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field TableName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 1937393723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Format</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field Utgår - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 1937393723 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BBS,Data Dialog</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field Utgår - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 1349000536 - Field 3422801990 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Valider felt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Excel export Setup - Field ValidateFieldIDs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 704478260 - NamedType 2779706391" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID in Excel sheet does not match selected table ID.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Les fra Excel - NamedType Text0001Msg</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excel Export Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the primary key.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 2940356048 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the row in the Excel buffer to use for the export.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control ExcelBufRow - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 956126462 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a code for the Excel template to use when exporting data.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control ExcelMalCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 1032501252 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the Excel template to use when exporting data.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control ExcelMalName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 491165568 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the fields to export to Excel.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control FieldIDs - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 989751795 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the Excel file to which data is to be exported.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control FileName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 1360888697 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date to use for the opening balance when importing data.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control IBDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 3626802534 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the log file to create during the import.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control ImportLogFil - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 2704330142 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the journal batch to use when importing data.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control Journal Batch Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 3684440170 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the journal template to use when importing data.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control Journal Template Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 1435595288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the key value to use to find records in the table.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control KeyValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 372841480 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether to create a new worksheet in the Excel file for the export.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control Opprett nytt regneark - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 4104898276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the sheet in the Excel file.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control SheetName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 291409893 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the table to which the data is to be exported.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control TableID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 730832363 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the table to which the data is to be exported.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control TableName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Control 3422801990 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the fields to validate before exporting to Excel.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Control ValidateFieldIDs - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2268857193 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get the name of the Blob field in the selected table.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action GetBlobField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2268857193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get Blob field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action GetBlobField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 4045198031 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get the names of the sheets in the selected Excel file.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action GetSheetNames - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 4045198031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Get sheet names</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action GetSheetNames - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 141679276 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Imports data from an Excel file.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action Hent Excel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 141679276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Excel document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action Hent Excel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2841592606 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exports data to an Excel file.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action Last ned Excel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2841592606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Excel document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action Last ned Excel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2859489771 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select fields to be included in the export.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action SelectFields - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2859489771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select fields</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action SelectFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2505227182 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set filters for the data to be exported.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action SetFilter - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 2505227182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set filters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action SetFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1188045370 - Action 3651399582 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 793274961">
+          <source>Insert template record for Excel Export.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DXTEXCConfigPageFields - Action SetTemplate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1188045370 - Action 3651399582 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 793274961">
+          <source>Set Template</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DXTEXCConfigPageFields - Action SetTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1188045370 - Control 2609919304 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 793274961">
+          <source>Specifies how the field is treated during processing. 0 = No action, &gt;0 = Actions to be taken</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DXTEXCConfigPageFields - Control Treatment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1188045370 - Control 2609919304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 793274961">
+          <source>Treatment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DXTEXCConfigPageFields - Control Treatment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3121469809 - Field 2609919304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3443661296">
+          <source>Treatment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DXTEXDataField - Field Treatment - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
