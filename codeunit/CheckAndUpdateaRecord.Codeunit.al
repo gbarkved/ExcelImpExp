@@ -255,28 +255,38 @@ codeunit 88601 CheckAndUpdateaRecord
                                 Result := FORMAT(v) <> s
                             else
                                 if v.IsDateTime then
-                                    Result := FORMAT(v) <> s;
+                                    Result := FORMAT(v) <> s
+                                else
+                                    if v.IsOption then
+                                        result := format(v) <> s
     end;
 
 
     procedure GetInteger(s: Text[250]) Result: Integer
     begin
         Result := 0;
-        if EVALUATE(Result, s) then;
+        if not EVALUATE(Result, s) then
+            Error('Invalid integer value: %1', s);
     end;
 
 
     procedure GetDecimal(s: Text) Result: Decimal
+
     begin
         Result := 0;
-        if EVALUATE(Result, s) then;
+        s := ConvertStr(s, '.', ',');
+        if not EVALUATE(Result, s) then
+            Error('Invalid decimal value: %1', s);
+
     end;
 
 
     procedure GetDate(s: Text) Result: Date
     begin
         Result := 0D;
-        if EVALUATE(Result, s) then;
+        if not EVALUATE(Result, s) then
+            Error('Invalid date value: %1', s);
+
     end;
 
 
@@ -297,7 +307,8 @@ codeunit 88601 CheckAndUpdateaRecord
             sek := ROUND((d - min) * 60, 1, '<');
             sTime := FORMAT(time, 2, '<Int>') + ':' + FORMAT(min, 2, '<int>') + ':' + FORMAT(sek, 2, '<int>');
             sTime := CONVERTSTR(sTime, ' ', '0');
-            if EVALUATE(result, sTime) then;
+            if not EVALUATE(result, sTime) then
+                Error('Invalid time value: %1', sTime);
             //  sTime := Format(
             //  Result := time;
         end;
@@ -306,8 +317,9 @@ codeunit 88601 CheckAndUpdateaRecord
 
     procedure GetBoolean(s: Text) Result: Boolean
     begin
-        Result := FALSE;
-        Result := (s = 'Ja')
+        Result := false;
+        s := UPPERCASE(s);
+        Result := (s = 'JA') or (s = 'YES') or (s = 'TRUE') or (s = '1');
     end;
 
     procedure GetOptionID(lanyField: FieldRef; s: Text) Result: Integer
@@ -454,6 +466,9 @@ codeunit 88601 CheckAndUpdateaRecord
     var
         ItemUnit: record "Item Unit of Measure";
         ItemReference: record "Item Reference";
+        Vendor: record Vendor;
+        lVendorNO: Code[20];
+
     begin
         if lTid in [101] then begin
             itemunit.init();
@@ -472,7 +487,18 @@ codeunit 88601 CheckAndUpdateaRecord
             ItemReference."Reference No." := RRec.Field(lFieldNo).VALUE; //Vendor Item No.
 
             if ItemReference.Insert() then;
-        end;
+        end
+        else
+            if LTID = 103 then begin
+                // Add logic for LTID = 103 here
+                lVendorNO := RRec.Field(31).VALUE;
+                if not Vendor.Get(lVendorNO) then
+                    rrec.field(31).value := ''; // Clear the Vendor No. field in the external record
+
+            end;
+
+
 
     end;
+
 }

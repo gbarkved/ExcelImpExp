@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="OrderPickingListCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>OrderPickingListCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>OrderPickingListCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PageCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PageCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PageCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNoCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNoCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNoCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="OrderNoCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>OrderNoCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>OrderNoCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CustomerNoCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CustomerNoCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CustomerNoCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CustomerNameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CustomerNameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CustomerNameCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QtyToAssembleCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QtyToAssembleCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QtyToAssembleCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QtyAssembledCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QtyAssembledCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QtyAssembledCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ShipmentDateCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ShipmentDateCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ShipmentDateCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QtyPickedCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QtyPickedCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QtyPickedCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UOMCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UOMCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UOMCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QtyConsumedCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QtyConsumedCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QtyConsumedCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CopyCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CopyCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CopyCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CustomerNo_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CustomerNo_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CustomerNo_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CustomerName_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CustomerName_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CustomerName_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Description_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Description_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Description_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VariantCode_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VariantCode_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VariantCode_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LocationCode_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LocationCode_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LocationCode_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BinCode_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BinCode_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BinCode_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Quantity_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Quantity_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Quantity_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitOfMeasure_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitOfMeasure_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitOfMeasure_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QuantityToShip_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QuantityToShip_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QuantityToShip_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QuantityShipped_SalesLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QuantityShipped_SalesLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QuantityShipped_SalesLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Description_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Description_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Description_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VariantCode_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VariantCode_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VariantCode_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Quantity_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Quantity_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Quantity_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QuantityPer_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QuantityPer_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QuantityPer_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LocationCode_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LocationCode_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LocationCode_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BinCode_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BinCode_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BinCode_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="QuantityToConsume_AssemblyLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QuantityToConsume_AssemblyLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QuantityToConsume_AssemblyLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Your_ReferenceCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Your_ReferenceCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Your_ReferenceCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Number">
+          <DataField>Number</DataField>
+        </Field>
+        <Field Name="CompanyNameText">
+          <DataField>CompanyNameText</DataField>
+        </Field>
+        <Field Name="DateText">
+          <DataField>DateText</DataField>
+        </Field>
+        <Field Name="No_SalesHeader">
+          <DataField>No_SalesHeader</DataField>
+        </Field>
+        <Field Name="CustomerNo_SalesHeader">
+          <DataField>CustomerNo_SalesHeader</DataField>
+        </Field>
+        <Field Name="CustomerName_SalesHeader">
+          <DataField>CustomerName_SalesHeader</DataField>
+        </Field>
+        <Field Name="LineNo_SalesLine">
+          <DataField>LineNo_SalesLine</DataField>
+        </Field>
+        <Field Name="ItemNo_SalesLine">
+          <DataField>ItemNo_SalesLine</DataField>
+        </Field>
+        <Field Name="Description_SalesLine">
+          <DataField>Description_SalesLine</DataField>
+        </Field>
+        <Field Name="VariantCode_SalesLine">
+          <DataField>VariantCode_SalesLine</DataField>
+        </Field>
+        <Field Name="LocationCode_SalesLine">
+          <DataField>LocationCode_SalesLine</DataField>
+        </Field>
+        <Field Name="BinCode_SalesLine">
+          <DataField>BinCode_SalesLine</DataField>
+        </Field>
+        <Field Name="ShipmentDate_SalesLine">
+          <DataField>ShipmentDate_SalesLine</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLine">
+          <DataField>Quantity_SalesLine</DataField>
+        </Field>
+        <Field Name="Quantity_SalesLineFormat">
+          <DataField>Quantity_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="UnitOfMeasure_SalesLine">
+          <DataField>UnitOfMeasure_SalesLine</DataField>
+        </Field>
+        <Field Name="QuantityToShip_SalesLine">
+          <DataField>QuantityToShip_SalesLine</DataField>
+        </Field>
+        <Field Name="QuantityToShip_SalesLineFormat">
+          <DataField>QuantityToShip_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="QuantityShipped_SalesLine">
+          <DataField>QuantityShipped_SalesLine</DataField>
+        </Field>
+        <Field Name="QuantityShipped_SalesLineFormat">
+          <DataField>QuantityShipped_SalesLineFormat</DataField>
+        </Field>
+        <Field Name="QtyToAsm">
+          <DataField>QtyToAsm</DataField>
+        </Field>
+        <Field Name="QtyToAsmFormat">
+          <DataField>QtyToAsmFormat</DataField>
+        </Field>
+        <Field Name="No_AssemblyLine">
+          <DataField>No_AssemblyLine</DataField>
+        </Field>
+        <Field Name="Description_AssemblyLine">
+          <DataField>Description_AssemblyLine</DataField>
+        </Field>
+        <Field Name="VariantCode_AssemblyLine">
+          <DataField>VariantCode_AssemblyLine</DataField>
+        </Field>
+        <Field Name="Quantity_AssemblyLine">
+          <DataField>Quantity_AssemblyLine</DataField>
+        </Field>
+        <Field Name="Quantity_AssemblyLineFormat">
+          <DataField>Quantity_AssemblyLineFormat</DataField>
+        </Field>
+        <Field Name="QuantityPer_AssemblyLine">
+          <DataField>QuantityPer_AssemblyLine</DataField>
+        </Field>
+        <Field Name="QuantityPer_AssemblyLineFormat">
+          <DataField>QuantityPer_AssemblyLineFormat</DataField>
+        </Field>
+        <Field Name="UnitOfMeasure_AssemblyLine">
+          <DataField>UnitOfMeasure_AssemblyLine</DataField>
+        </Field>
+        <Field Name="LocationCode_AssemblyLine">
+          <DataField>LocationCode_AssemblyLine</DataField>
+        </Field>
+        <Field Name="BinCode_AssemblyLine">
+          <DataField>BinCode_AssemblyLine</DataField>
+        </Field>
+        <Field Name="QuantityToConsume_AssemblyLine">
+          <DataField>QuantityToConsume_AssemblyLine</DataField>
+        </Field>
+        <Field Name="QuantityToConsume_AssemblyLineFormat">
+          <DataField>QuantityToConsume_AssemblyLineFormat</DataField>
+        </Field>
+        <Field Name="Your_Reference">
+          <DataField>Your_Reference</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -278,6 +278,61 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action SetFilter - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 3383256191 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Slett alle leverandører som har blitt endret før 2. september 2026.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action SlettLev - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1380660792 - Action 3383256191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Slett leverandører</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Excel Export Setup - Action SlettLev - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 443476659 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excel Import Error List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelEIErrorList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 443476659 - Control 2623664455 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelEIErrorList - Control Errortext - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 443476659 - Control 1165969121 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelEIErrorList - Control LineNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 443476659 - Control 2832376511 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Packed Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelEIErrorList - Control PackedCode - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 443476659 - Control 956471723 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>RecId</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelEIErrorList - Control RecId - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 443476659 - Control 3135334477 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelEIErrorList - Control Table ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1962423488 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Excel Export Setup List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelExpImpList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1962423488 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelExpImpList - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1962423488 - Control 989751795 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ExcelExpImpList - Control FileName - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1188045370 - Action 3651399582 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 793274961">
           <source>Insert template record for Excel Export.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -298,10 +353,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension DXTEXCConfigPageFields - Control Treatment - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 856551402 - Action 3756810549 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Import Payroll Transactions from Proplan</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DXTEXTGeneralJournal - Action ProplanImport - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 856551402 - Action 3756810549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2583272393">
+          <source>Proplan Import</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension DXTEXTGeneralJournal - Action ProplanImport - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3121469809 - Field 2609919304 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3443661296">
           <source>Treatment</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension DXTEXDataField - Field Treatment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3606020276 - Field 1633666368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Vendor Exists</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension DXTEXItem - Field Vendor Exists - Property Caption</note>
         </trans-unit>
       </group>
     </body>

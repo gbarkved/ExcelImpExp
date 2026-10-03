@@ -1,5 +1,5 @@
 namespace cepheo.ExcelImportExport;
-
+using Microsoft.Purchases.Vendor;
 using System.IO;
 using System.Reflection;
 
@@ -248,6 +248,26 @@ page 88600 "Excel Export Setup"
                     // Nå kan du bruke ContentText som inneholder blob-innholdet som tekst
                     ReadXML.ImportXMLToBuffer(InStr);
 
+                end;
+            }
+            action(SlettLev)
+            {
+
+                ApplicationArea = All;
+                Promoted = true;
+                Caption = 'Slett leverandører';
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Visible = false;
+                ToolTip = 'Slett alle leverandører som har blitt endret før 2. september 2026.';
+                trigger OnAction()
+                var
+                    LevRec: Record "Vendor"; // Example record for the action
+                begin
+                    LevRec.Reset();
+                    LevRec.SetRange("Last Date Modified", 0D, 20260902D);
+                    LevRec.DeleteAll(true);
+                    // Add your code for the action here
                 end;
             }
         }

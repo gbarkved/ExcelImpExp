@@ -27,6 +27,7 @@ codeunit 88600 "Les fra Excel"
 
         MalL: Record "Config. Package Field";
 
+        ErrorLog: Record "Excel Error";
         MalFilter: Record 8626;
         CheckAndUpdate: Codeunit CheckAndUpdateaRecord;
         AnyTable: RecordRef;
@@ -45,6 +46,7 @@ codeunit 88600 "Les fra Excel"
         if arec.FileName = '' then
             EXIT;
         CLEAR(TempExcelBuff);
+        ErrorLog.DELETEALL();
         TempExcelBuff.DELETEALL();
         if arec.SheetName = '' then
             arec.SheetName := 'Ark1';
@@ -108,16 +110,16 @@ codeunit 88600 "Les fra Excel"
 
         MalFilter.SETRANGE("Table ID", ExcelSetup.TableID);
         MalFilter.SETRANGE("Package Code", ExcelSetup.Code);
-        EnterCell(1, 1, ExcelSetup.code, TRUE, FALSE, FALSE);
-        Entercell(1, 2, ExcelSetup.TableName, TRUE, FALSE, FALSE);
-        EnterCell(1, 3, Format(ExcelSetup.TableID), TRUE, FALSE, FALSE);
+        EnterCell(1, 1, ExcelSetup.code, TRUE, FALSE, FALSE, true);
+        EnterCell(1, 2, ExcelSetup.TableName, TRUE, FALSE, FALSE, true);
+        EnterCell(1, 3, Format(ExcelSetup.TableID), TRUE, FALSE, FALSE, true);
         i := 1;
 
         if MalL.FINDFIRST() then
             repeat
                 //MalL.CALCFIELDS(FieldName);
                 Felt[i] := MalL."Field ID";
-                EnterCell(3, i, MalL."Field Caption", TRUE, FALSE, TRUE);
+                EnterCell(3, i, MalL."Field Caption", TRUE, FALSE, TRUE, false);
                 //EnterCell(1, i, MalL.FieldName, TRUE, FALSE, FALSE);
                 i += 1;
             until MalL.NEXT() = 0;
@@ -174,18 +176,18 @@ codeunit 88600 "Les fra Excel"
 
                 case mall."Field ID" of
                     1:
-                        EnterCell(rad, 1, lExcelSetup."Journal Template Name", false, FALSE, FALSE);
+                        EnterCell(rad, 1, lExcelSetup."Journal Template Name", false, FALSE, FALSE, false);
                     2:
-                        EnterCell(rad, 2, Format(10000), false, FALSE, FALSE);
+                        EnterCell(rad, 2, Format(10000), false, FALSE, FALSE, false);
 
 
                     51:
-                        EnterCell(rad, FindCol(51), lExcelSetup."Journal Batch Name", false, FALSE, FALSE);
+                        EnterCell(rad, FindCol(51), lExcelSetup."Journal Batch Name", false, FALSE, FALSE, false);
                     else
-                        EnterCell(rad, 1, '', false, FALSE, FALSE);
+                        EnterCell(rad, 1, '', false, FALSE, FALSE, false);
                 end;
             until Mall.Next() = 0;
-        EnterCell(rad, FindCol(5), Format(lExcelSetup.IBDate, 0, 1), false, FALSE, FALSE);
+        EnterCell(rad, FindCol(5), Format(lExcelSetup.IBDate, 0, 1), false, FALSE, FALSE, false);
         //EnterCell(rad, 4, lExcelSetup."Journal Batch Name", false, FALSE, FALSE);
     end;
 
@@ -280,18 +282,23 @@ codeunit 88600 "Les fra Excel"
                             aExcelSetup.KeyValue := CopyStr(TempExcelBuff."Cell Value as Text", 1, MaxStrLen(aExcelSetup.KeyValue));
                         rad += 1;
                         COMMIT();
-                        if not CheckAndUpdate.RUN(aExcelSetup) then
-                            if aExcelSetup.ImportLogFil <> '' then begin
-                                tabChar[1] := 9;
-                                Message(GetLastErrorText);
-                                if not LogFileOpen then;
+                        if not CheckAndUpdate.RUN(aExcelSetup) then begin
+                            tabChar[1] := 9;
 
-                                LogFileOpen := TRUE;
+                            if not LogFileOpen then;
 
+                            LogFileOpen := TRUE;
+                            ErrorLog.Init();
+                            ErrorLog.RecId := rad;
+                            ErrorLog."Table ID" := aExcelSetup.TableID;
+                            ErrorLog.PackedCode := copyStr(aExcelSetup.KeyValue, 1, 20);
+                            errorlog.ErrorText := CopyStr(GetLastErrorText(), 1, 250);
 
-                                AntallFeil += 1;
+                            ErrorLog.INSERT();
 
-                            end;
+                            AntallFeil += 1;
+
+                        end;
                         //aExcelSetup.IBLineNo += 10;
                         COMMIT();
                         Window.UPDATE(2, FORMAT(rad));
@@ -303,10 +310,12 @@ codeunit 88600 "Les fra Excel"
 
         if AntallFeil > 0 then
             MESSAGE('Feil ved %1 poster. Siste melding\' +
-                    '%2', AntallFeil, GETLASTERRORTEXT);
+                    '%2', AntallFeil, errorlog.Errortext)
+        else
+            message('%1 poster importert uten feil.', rad - 4);
     end;
-
-    local procedure EnterCell(RowNo: Integer; ColumnNo: Integer; CellValue: Text[250]; Bold: Boolean; Italic: Boolean; UnderLine: Boolean)
+    //local procedure UpdateErrorLog
+    local procedure EnterCell(RowNo: Integer; ColumnNo: Integer; CellValue: Text[250]; Bold: Boolean; Italic: Boolean; UnderLine: Boolean; isText: Boolean)
     begin
         TempExcelBuff.INIT();
         TempExcelBuff.VALIDATE("Row No.", RowNo);
@@ -316,7 +325,8 @@ codeunit 88600 "Les fra Excel"
         TempExcelBuff.Bold := Bold;
         TempExcelBuff.Italic := Italic;
         TempExcelBuff.Underline := UnderLine;
-        //TempExcelBuff."Cell Type" := TempExcelBuff."Cell Type"::
+        if isText then
+            TempExcelBuff."Cell Type" := TempExcelBuff."Cell Type"::"Text";
         TempExcelBuff.INSERT(true);
     end;
 
@@ -324,16 +334,23 @@ codeunit 88600 "Les fra Excel"
     procedure f2e(row: Integer; col: Integer; lField: FieldRef)
     var
         s: Text[250];
+        isText: Boolean;
     begin
         if FORMAT(lField.CLASS) = 'FlowField' then
             lField.CALCFIELD();
+        isText := false;
         case FORMAT(lField.TYPE) of
             'Code', 'Text':
-                s := FORMAT(lField.VALUE);  //Geirb, 10.aug.12
-            else
+                begin
+                    s := FORMAT(lField.VALUE);  //Geirb, 10.aug.12
+                    isText := true;
+                end
+            else begin
                 s := FORMAT(lField.VALUE, 0, 1);
+                isText := false;
+            end;
         end;
-        EnterCell(row, col, s, FALSE, FALSE, FALSE);
+        EnterCell(row, col, s, FALSE, FALSE, FALSE, isText);
     end;
 
 

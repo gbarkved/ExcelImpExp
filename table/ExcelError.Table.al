@@ -25,7 +25,7 @@ table 88602 "Excel Error"
             Caption = 'Linjenr';
             DataClassification = ToBeClassified;
         }
-        field(5; Errortext; Text[100])
+        field(5; Errortext; Text[250])
         {
             DataClassification = ToBeClassified;
         }

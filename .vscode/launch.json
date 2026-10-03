@@ -7,9 +7,10 @@
             "type": "al",
             "environmentType": "Sandbox",
             "environmentName": "BC_Norge_Cepheo_Dev",
+           //"environmentName": "Sandbox",
             //https://businesscentral.dynamics.com/10f5bf15-1f96-4a40-9f77-9ae6b096066a/BC_Norge_Cepheo_Dev
            
-            "startupObjectId": 88600,
+            "startupObjectId": 88601,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
@@ -20,11 +21,11 @@
             //"tenant": "626d9493-81f6-4f07-8e8b-2db177fba6f7", // Standard Norge
         },
         {
-            "name": "EL Proffen",
+            "name": "Bygg-Service Test DEV",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "SandboxENGROS",
+            "environmentName": "TEST_DEV",
            
             "startupObjectId": 22,
             "startupObjectType": "Page",
@@ -32,7 +33,8 @@
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "tenant": "ea4cea70-faec-46d9-9f2c-afa18ddf85da"
+            "tenant": "590928a6-9acb-4ff4-bef8-bd0b8fa26a00"
+            //"tenant": "ea4cea70-faec-46d9-9f2c-afa18ddf85da"
             //0dacb565-9ae5-4dfe-81ae-39dbd29e74b6 Pole Position
             //"tenant": "626d9493-81f6-4f07-8e8b-2db177fba6f7", // Standard Norge
         }
